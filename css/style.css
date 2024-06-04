@@ -1,0 +1,503 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-display: swap;
+}
+:root{
+    --black:#000;
+    --white:#fff;
+    --darkblue:#1D2937;
+    --orange1:#FF6E4B; 
+    --orange2:#FF9800; 
+    --green:green;
+    --cinza: rgb(216, 216, 216);
+}
+html {
+    scroll-behavior: smooth;
+  }
+/* header */
+header{
+    background-color: var(--orange2);
+    width: 100%;
+    height: 4rem;
+    color: white;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+header address{
+    color: white;
+}
+header i.icones{
+    text-align: center;
+    color: white;
+}
+/* navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    padding: 0 1rem;
+    background-color: var(--white);
+}
+nav a.navbar:hover{
+    opacity: 1;
+    color: var(--white);
+    background-color: var(--orange2);
+    border-radius: 15%;
+    padding: 10px 10px;
+}
+.menu-mobile-icon {
+    display: none; /* Escondido por padrão */
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* Centralizar a logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+/* Menu desktop */
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin: 0 1rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--darkblue);
+    font-size: 1rem;
+}
+
+/* Menu mobile */
+@media (max-width: 740px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 250px;
+        height: 100%;
+        background-color: var(--darkblue);
+        padding-top: 60px;
+        transition: left 0.3s ease;
+        color: var(--white);
+    }
+    .menu a {
+        text-decoration: none;
+        color: var(--white);
+        font-size: 1rem;
+    }
+    .menu li {
+        margin: 1.5rem 0;
+        padding-left: 1.5rem;
+    }
+    .menu-mobile-icon {
+        display: block; /* Exibido em telas menores */
+    }
+    .menu-open {
+        left: 0;
+        display: flex; /* Exibido ao abrir o menu */
+    }
+    /* Centralizar a logo */
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+    }
+}
+/* card vantagens */
+.card-container {
+    display: flex;
+    justify-content: space-around; /* Distribui os cards igualmente ao longo da linha */
+    flex-wrap: wrap; /* Permite que os cards se movam para a próxima linha quando não há espaço suficiente */
+    margin-top: 10vh;
+}
+.card-vantagens {
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+    padding: 20px;
+    background-color:var(--white);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 0.5px solid #FF9800;
+}
+.card-vantagens:hover{
+    transform: translateY(-10px);
+    background-color:var(--orange2);
+    color: var(--white);
+}
+.card-vantagens:hover h3,
+.card-vantagens:hover p,
+.card-vantagens:hover i {
+    color: var(--white);
+}
+.card-vantagens i {
+    font-size: 10vh;
+    text-align: center;
+    color: var(--orange2);
+}
+.card-vantagens h3 {
+    margin: 0;
+    font-size: 2.8vh;
+    text-align: center;
+    color: var(--orange2);
+}
+.card-vantagens p {
+    margin: 0;
+    font-size: 2.2vh;
+    text-align: center;
+    color: var(--orange2);
+}
+/* banner */
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/agente-de-seguranca-de-tiro-medio-posando-no-estudio.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: var(--white);
+    text-align: center;
+}
+.banner h1{
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+}
+.banner h2{
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: white;
+}
+.banner a.btn-saiba-mais{
+    background: var(--orange2);
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+.banner a.btn-saiba-mais:hover{
+    background: var(--green);
+}
+@media (max-width: 700px){
+    .banner h1{font-size: 2rem; padding: 10px;}
+    .banner h2{font-size: 1.5rem;}
+    .banner .btn-saiba-mais{font-size: 1rem; padding: 10px 15px;}
+}
+/* conheça o hotel */
+section.conheca-o-hotel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20px;
+    text-align: center;
+}
+section.conheca-o-hotel h3{
+    font-size: 3rem;
+    margin-bottom: 35px;
+    color: var(--darkblue);
+    line-height: 100%;
+}
+section.conheca-o-hotel p{
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin-bottom: 25px;
+    color: var(--orange2);
+}
+section.conheca-o-hotel hr{
+    width: 200px;
+    height: 2px;
+    margin-bottom: 70px;
+    background-color: var(--orange);
+    border: none;
+}
+/* sobre */
+section.conheca-o-hotel ul.grid-img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+}
+section.conheca-o-hotel ul.grid-img li{
+    height: 350px;
+    padding: 20px;
+    border-radius: 5px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+section.conheca-o-hotel ul.grid-img li.small{
+    flex-basis: 40%;
+}
+section.conheca-o-hotel ul.grid-img li.large{
+    flex-basis: 60%;
+}
+@media (max-width: 700px){
+    section.conheca-o-hotel h3{
+        font-size: 2.5rem;
+        margin-bottom: 35px;
+    }
+    section.conheca-o-hotel ul.grid-img li.small,section.conheca-o-hotel ul.grid-img li.large{
+        flex-basis: 100%;
+    }
+}
+/* clientes */
+section.conheca-o-hotel ul.grid-img-clientes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+}
+section.conheca-o-hotel ul.grid-img-clientes li{
+    height: 350px;
+    padding: 20px;
+    border-radius: 5px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+} 
+.grid-img-clientes li{
+    transition: filter 0.3s; /* Adiciona uma transição suave ao filtro */
+    filter: grayscale(100%); /* Aplica a desaturação inicial */
+}
+.grid-img-clientes li:hover{
+    filter: grayscale(0%); /* Remove a desaturação ao passar o mouse */
+}
+section.conheca-o-hotel ul.grid-img-clientes li.small{
+    flex-basis: 40%;
+}
+section.conheca-o-hotel ul.grid-img-clientes li.large{
+    flex-basis: 60%;
+}
+@media (max-width: 700px){
+    section.conheca-o-hotel h3{
+        font-size: 2.5rem;
+        margin-bottom: 35px;
+    }
+    section.conheca-o-hotel ul.grid-img-clientes li.small,section.conheca-o-hotel ul.grid-img-clientes li.large{
+        flex-basis: 100%;
+    }
+}
+/* service */
+section.section-vantagens{
+    background: var(--darkblue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 35px;
+    text-align: center;
+}
+section.section-vantagens h4{
+    font-size: 3rem;
+    margin-bottom: 35px;
+    color: var(--white);
+    line-height: 100%;
+}
+section.section-vantagens p{
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin-bottom: 25px;
+    color: var(--orange2);
+}
+section.section-vantagens hr{
+    width: 200px;
+    height: 2px;
+    margin-bottom: 70px;
+    background-color: var(--orange2);
+    border: none;
+}
+section.section-vantagens div.service{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+}
+section.section-vantagens div.service div.card{
+    background-color: var(--orange2);
+    color: var(--white);
+    width: 100%;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+div.service div.card p.title-service{
+    font-size: 1.1rem;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: bold;
+} 
+div.service div.card p.text-service{
+    color: var(--white);
+    font-size: 1rem;
+    text-align:center;
+}
+div.service div.card a{
+    padding: 10px;
+    background-color: var(--green);
+    color: var(--white);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: box-shadow 0.2s;
+}
+div.service div.card a:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+section.section-vantagens ul.grid-img{
+    display: flex;
+    align-items: center;
+}
+section.section-vantagens ul.grid-img li{
+    padding: 0 30px;
+    text-align: center;
+    list-style: none;
+}
+section.section-vantagens ul.grid-img li i{
+    color: var(--orange2);
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+section.section-vantagens ul.grid-img li h5{
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-bottom: 30px;
+}
+section.section-vantagens ul.grid-img li p{
+    color: var(--white);
+}
+@media (max-width: 700px){
+    section.section-vantagens h4{
+        font-size: 2.5rem;
+        margin-bottom: 35px;
+    }
+    section.section-vantagens .grid-img{
+        flex-direction: column;
+    }
+    section.section-vantagens div.service{
+       flex-direction: column;
+    }
+}
+/* Newlatter */
+section.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 50px;
+    background-color: var(--orange2);
+}
+section.newsletter h4{
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+    color: var(--darkblue);
+    line-height: 100%;
+    text-align: center;
+}
+section.newsletter p{
+    max-width: 800px;
+    margin-bottom: 25px;
+    color: var(--white);
+    font-size: 2rem;
+    text-wrap: wrap;
+}
+section.newsletter hr{
+    width: 200px;
+    height: 2px;
+    margin-bottom: 50px;
+    background-color: var(--white);
+    border: none;
+}
+section.newsletter a{
+    padding: 15px;
+    background-color: var(--green);
+    color: var(--white);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px 0px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    animation: pulse 1s infinite; /* Aplica a animação pulse ao botão */
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@media (max-width: 700px){
+    section.section-vantagens .grid-img{
+        flex-direction: column;
+    }
+}
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    background: var(--black);
+    padding: 20px 20px;
+    align-items: center;
+}
+footer ul{
+    display: flex;
+    margin-bottom: 25px;
+    list-style: none;
+}
+footer ul li{
+    margin-right: 10px;
+}
+footer ul li:last-child{
+    margin-right: 0;
+}
+footer ul li a{
+    color: var(--white);
+    font-size: 2rem;
+    text-align: center;
+}
+footer p{
+    color: var(--white);
+    text-align: center;
+}

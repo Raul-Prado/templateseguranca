@@ -1,0 +1,73 @@
+:root{
+    --black:#000;
+    --white:#fff;
+    --cinza:#ccc;
+    --darkblue:#1D2937;
+    --orange:#FF6E4B;
+}
+.tema-dark{
+    background-color: var(--darkblue);
+    color:#ccc !important;
+}
+.tema-dark header{
+    background-color: var(--darkblue);
+    color: var(--cinza);
+}
+.tema-dark nav#itens{
+    background-color: var(--darkblue);
+}
+.tema-dark nav#itens ul li a.navbar{
+    color: var(--cinza);
+} 
+.tema-dark section.banner h1,
+.tema-dark section.banner h2,
+.tema-dark section.banner a{
+    color: var(--cinza);
+} 
+.tema-dark section.conheca-o-hotel h3{
+    color: var(--cinza);
+}
+.tema-dark section.conheca-o-hotel p{
+    color: var(--cinza);
+}
+.tema-dark section.section-vantagens h4{
+    color: var(--cinza);
+} 
+.tema-dark div.service div.card p{
+    color: var(--cinza);
+}
+.tema-dark section.section-vantagens ul.grid-img li h5, p{
+    color: var(--cinza);
+}
+.tema-dark section.newsletter h4{
+    color: var(--cinza);
+}
+/* //trocar thems */
+#toggle-theme {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin: 0 10px;
+}
+/* Estilizar a barra do input */
+#toggle-theme::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #333;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* Adicionar estilos para os ícones */
+.fa-moon, .fa-sun {
+    font-size: 15px;
+  }
+@media (max-width: 700px){
+    nav{ align-items: center; height: 7rem;}
+    nav img{margin-bottom: 15px; align-self: center;}
+}

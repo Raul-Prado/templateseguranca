@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encontre os melhores. Oferecemos uma ampla e muito mais, com entrega rápida e garantia de qualidade. Visite-nos hoje mesmo e aproveite nossas ofertas exclusivas!">
+    <!-- Preload CSS -->
+    <link rel="stylesheet" href="/css/loader.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/temaDark.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.gstatic.com">
+    <!-- Preload Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" as="style" crossorigin="anonymous">
+    <!-- Load Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="all">
+    </noscript>
+    <title>Seu Site</title>
+</head>
+<body>
+    <!-- Tela de carregamento -->
+    <div id="loader">
+        <div class="spinner">
+            <i class="fas fa-lock"></i>
+        </div>
+    </div>
+    <div id="conteudoSite" style="display: none;">
+        <header>
+            <address>
+                <i class="fa-solid fa-envelope icones"></i> 
+                <a href="mailto:webmaster@example.com">seusite@gmail.com.br</a>
+            </address>
+            <a href="tel:+"><i class="fa-solid fa-phone-volume icones"></i> +55 11 99999-9999</a>
+        </header>
+        <nav id="itens">
+            <!-- Ícone do menu para dispositivos móveis -->
+            <div class="menu-mobile-icon">
+                <i id="burguer" class="fas fa-bars" onclick="toggleMenu()"></i>
+            </div>
+            <div class="logo-container">
+                <img src="img/logo.webp" alt="Logo da empresa" loading="lazy" height="50" width="100">
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="http://" class="navbar" style="color: #FF6E4B;" onclick="closeMenu()">Home</a>
+                </li>
+                <li>
+                    <a href="#sobre" class="navbar" onclick="closeMenu()">Sobre</a>
+                </li>
+                <li>
+                    <a href="#servicos" class="navbar" onclick="closeMenu()">Serviços</a>
+                </li>
+                <li>
+                    <a href="#clientes" class="navbar" onclick="closeMenu()">Clientes</a>
+                </li>
+                <li>
+                    <a href="#contato" class="navbar" onclick="closeMenu()">Contato</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-sun"></i>
+                    <input id="toggle-theme" type="range" min="0" max="1" step="1" value="0">
+                    <i class="fa-solid fa-moon"></i>
+                </li>
+            </ul>
+        </nav>
+        <!-- banner -->
+        <section class="banner">
+            <h1>Guardando o que é Importante para Você</h1>
+            <h2>"Seu Patrimônio em Boas Mãos"</h2>
+            <a href="http://" class="btn-saiba-mais">Venha conhecer!</a>
+        </section>
+        <main>
+            <!-- vantagens -->
+            <section class="card-container">
+                <div class="card-vantagens">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Equipe de Especialistas</h3>
+                    <p>Nossa equipe altamente qualificada está aqui para oferecer soluções personalizadas e de ponta para atender às suas necessidades.</p>
+                </div>
+                <div class="card-vantagens">
+                    <i class="fas fa-star"></i>
+                    <h3>Soluções Completas</h3>
+                    <p>Diversos serviços como vigilância, portaria, controle de acesso, monitoramento, limpeza, manutenção e outros facilites.</p>
+                </div>
+                <div class="card-vantagens">
+                    <i class="fas fa-heart"></i>
+                    <h3>Preço justo</h3>
+                    <p>Nossos serviços de segurança patrimonial oferecem o melhor custo-benefício, garantindo a proteção que você precisa sem comprometer seu orçamento.</p>
+                </div>
+                <div class="card-vantagens">
+                    <i class="fas fa-smile"></i>
+                    <h3>Atendimento Personalizado</h3>
+                    <p>Nosso compromisso com o atendimento personalizado garante que cada um dos nossos clientes sejam tratados de forma única e especial.</p>
+                </div>
+            </section>
+            <!-- sobre -->
+            <section class="conheca-o-hotel" id="sobre">
+                <h3>Especialista em Segurança e Serviços.</h3>
+                <p>A security oferece soluções completas, híbridas e eficientes para atender cada demanda dos clientes em Segurança e Serviços. 
+                    A seleção, treinamento e desenvolvimento dos profissionais aliados a uma gestão moderna, controle de todos os processos e tecnologia disruptiva garantem a eficiência dos serviços prestados. 
+                    A longa trajetória da empresa, que já soma mais de 30 anos de atuação, confere às equipes o histórico e o conhecimento acumulado necessários para que as melhores estratégias sejam aplicadas em todo tipo de contrato, atendendo organizações de diversos portes e ramos de atividade.
+                </p>
+                <hr>
+                <ul class="grid-img">
+                    <li class="small" style="background-image: url('img/agente-de-seguranca-de-tiro-medio-posando-no-estudio.jpg');"></li>
+                    <li class="large" style="background-image: url('img/agente-de-seguranca-de-tiro-medio-posando-no-estudio.jpg');"></li>
+                    <li class="large" style="background-image: url('img/agente-de-seguranca-de-tiro-medio-posando-no-estudio.jpg');">
+                    </li>
+                    <li class="small" style="background-image: url('img/agente-de-seguranca-de-tiro-medio-posando-no-estudio.jpg');"></li>
+                </ul>
+            </section>
+            <!-- Serviços -->
+            <section class="section-vantagens" id="servicos">
+                <h4>Nossos serviços</h4>
+                <p>O que oferecemos</p>
+                <hr>
+                <div class="service">
+                    <div class="card">
+                        <i></i>
+                        <p class="title-service">Vigilância</p>
+                        <p class="text-service">Nosso serviço de vigilância oferece proteção 24 horas por dia, 7 dias por semana, garantindo a segurança e tranquilidade do seu patrimônio.
+                        </p>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">Fale Conosco <i
+                                class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <div class="card">
+                        <i></i>
+                        <p class="title-service">Portaria</p>
+                        <p class="text-service">Profissionais treinados em atendimento ao cliente e segurança, garantindo a entrada e saída, mantendo a segurança e o controle de acesso.
+                        </p>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">Fale Conosco <i
+                                class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <div class="card">
+                        <i></i>
+                        <p class="title-service">Manutenção</p>
+                        <p class="text-service">Equipe especializada em realiza inspeções regulares, reparos e atualizações para garantir que todos os equipamentos, estejam funcionando de forma eficiente.
+                        </p>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">Fale Conosco <i
+                                class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <div class="card">
+                        <i></i>
+                        <p class="title-service">Limpeza</p>
+                        <p class="text-service">Equipe experiente realiza limpezas regulares e detalhadas, garantindo que todos os espaços estejam impecáveis e livres de sujeira, poeira e germes.</p>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">Fale Conosco <i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <br>
+                    </div>
+                </div>
+                <ul class="grid-img">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h5>Localização</h5>
+                        <p>R. Barra do Úna, 235 - Itaquaquecetuba - SP</p>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <h5>Preços</h5>
+                        <p>Oferecemos o melhor custo-benefício</p>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-bell-concierge"></i>
+                        <h5>Suporte rápido</h5>
+                        <p>Suporte 24 horas por dia, 7 dias por semana</p>
+                    </li>
+                </ul>
+            </section>
+            <!-- Portfólio -->
+            <section class="conheca-o-hotel" id="clientes">
+                <h3>Nossos Clientes</h3>
+                <p>Projetos Recentes</p>
+                <hr>
+                <ul class="grid-img-clientes">
+                    <li class="small" style="background-image: url('img/caixa-cliente.png');"></li>
+                    <li class="large" style="background-image: url('img/casas-bahia-clientes.png');"></li>
+                    <li class="large" style="background-image: url('img/google-cliente.svg');">
+                    </li>
+                    <li class="small" style="background-image: url('img/Mercado-Livre-cliente.jpg');"></li>
+                </ul>
+            </section>
+            <!-- newslatter -->
+            <section class="newsletter" id="contato">
+                <h4>Consiga sua melhor proposta</h4>
+                <p>Fale Conosco atráves do WhatsApp </p>
+                <hr>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Iniciar Cotação <i
+                        class="fa-brands fa-whatsapp"></i></a>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li>
+                    <a href="http://" target="_blank" rel="noopener noreferrer" title="Facebook sua empresa">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://" target="_blank" rel="noopener noreferrer" title="Instagram sua empresa">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://" target="_blank" rel="noopener noreferrer" title="WhatsApp sua empresa">
+                        <i class="fa-brands fa-square-whatsapp"></i>
+                    </a>
+                </li>
+            </ul>
+            <p>Todos os direitos reservados a SuaEmpresa 2024</p>
+            <a href="" target="_blank" rel="noopener noreferrer">
+                Desenvolvido por GrupoInovaTech 2024 <span style="font-size: 100%;">&#9749</span> Feito com Amor <span
+                    style="font-size: 100%;">&#128155</span>
+            </a>
+        </footer>
+    </div>
+    <script src="/javascript/loader.js" async></script>
+    <script src="/javascript/script.js" defer></script>
+    <script src="/javascript/menuMobile.js" defer></script>
+</body>
+
+</html>
