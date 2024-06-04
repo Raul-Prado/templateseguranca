@@ -164,19 +164,19 @@ nav a.navbar:hover{
     color: var(--white);
 }
 .card-vantagens i {
-    font-size: 10vh;
+    font-size: 300%;
     text-align: center;
     color: var(--orange2);
 }
 .card-vantagens h3 {
     margin: 0;
-    font-size: 2.8vh;
+    font-size: 110%;
     text-align: center;
     color: var(--orange2);
 }
 .card-vantagens p {
     margin: 0;
-    font-size: 2.2vh;
+    font-size: 90%;
     text-align: center;
     color: var(--orange2);
 }
@@ -189,7 +189,7 @@ nav a.navbar:hover{
     background-image: url(../img/agente-de-seguranca-de-tiro-medio-posando-no-estudio.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    min-height: 85vh;
     color: var(--white);
     text-align: center;
 }
@@ -404,7 +404,7 @@ section.section-vantagens ul.grid-img li h5{
 section.section-vantagens ul.grid-img li p{
     color: var(--white);
 }
-@media (max-width: 700px){
+@media (max-width: 950px){
     section.section-vantagens h4{
         font-size: 2.5rem;
         margin-bottom: 35px;
