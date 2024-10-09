@@ -11,18 +11,19 @@
     --white:#fff;
     --darkblue:#1D2937;
     --orange1:#FF6E4B; 
+    --gold:#d1b564;
     --orange2:#FF9800; 
     --green:green;
     --cinza: rgb(216, 216, 216);
 }
 html {
     scroll-behavior: smooth;
-  }
+}
 /* header */
 header{
-    background-color: var(--orange2);
+    background-color: var(--gold);
     width: 100%;
-    height: 4rem;
+    height: 2rem;
     color: white;
     position: relative;
     top: 0;
@@ -54,8 +55,8 @@ nav {
 }
 nav a.navbar:hover{
     opacity: 1;
-    color: var(--white);
-    background-color: var(--orange2);
+    color: var(--white)!important;
+    background-color: var(--gold);
     border-radius: 15%;
     padding: 10px 10px;
 }
@@ -64,35 +65,29 @@ nav a.navbar:hover{
     cursor: pointer;
     font-size: 1.5rem;
 }
-
 /* Centralizar a logo */
 .logo-container {
     display: flex;
     align-items: center;
     flex-grow: 1;
 }
-
 .logo {
     height: 50px;
     width: auto;
 }
-
 /* Menu desktop */
 .menu {
     display: flex;
     list-style: none;
 }
-
 .menu li {
     margin: 0 1rem;
 }
-
 .menu a {
     text-decoration: none;
     color: var(--darkblue);
     font-size: 1rem;
 }
-
 /* Menu mobile */
 @media (max-width: 740px) {
     .menu {
@@ -151,11 +146,11 @@ nav a.navbar:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 0.5px solid #FF9800;
+    border: 0.5px solid #d1b564;
 }
 .card-vantagens:hover{
     transform: translateY(-10px);
-    background-color:var(--orange2);
+    background-color:var(--gold);
     color: var(--white);
 }
 .card-vantagens:hover h3,
@@ -166,19 +161,19 @@ nav a.navbar:hover{
 .card-vantagens i {
     font-size: 300%;
     text-align: center;
-    color: var(--orange2);
+    color: var(--gold);
 }
 .card-vantagens h3 {
     margin: 0;
     font-size: 110%;
     text-align: center;
-    color: var(--orange2);
+    color: var(--gold);
 }
 .card-vantagens p {
     margin: 0;
     font-size: 90%;
     text-align: center;
-    color: var(--orange2);
+    color: var(--gold);
 }
 /* banner */
 .banner{
@@ -186,7 +181,7 @@ nav a.navbar:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(../img/agente-de-seguranca-de-tiro-medio-posando-no-estudio.jpg);
+    background-image: url(../img/banner-grupo-js-prestadora-de-servico.svg);
     background-size: cover;
     background-position: center;
     min-height: 85vh;
@@ -194,24 +189,27 @@ nav a.navbar:hover{
     text-align: center;
 }
 .banner h1{
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     margin-bottom: 15px;
+    font-weight: normal;
 }
 .banner h2{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin-bottom: 15px;
     color: white;
+    text-decoration: solid;
+    font-family: "Poppins", sans-serif;
+    font-display: swap;
+    font-weight: normal;
 }
 .banner a.btn-saiba-mais{
-    background: var(--orange2);
+    background: var(--gold);
     color: var(--white);
     text-decoration: none;
     font-size: 1.2rem;
     margin-bottom: 10px;
     border-radius: 10px;
-    padding: 20px 30px;
-    text-transform: uppercase;
-    transition: color 0.3s;
+    padding: 10px 20px;
 }
 .banner a.btn-saiba-mais:hover{
     background: var(--green);
@@ -226,7 +224,7 @@ section.conheca-o-hotel{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 20px;
+    padding: 50px 20px;
     text-align: center;
 }
 section.conheca-o-hotel h3{
@@ -239,13 +237,13 @@ section.conheca-o-hotel p{
     font-size: 1.1rem;
     max-width: 800px;
     margin-bottom: 25px;
-    color: var(--orange2);
+    color: var(--gold);
 }
 section.conheca-o-hotel hr{
     width: 200px;
     height: 2px;
     margin-bottom: 70px;
-    background-color: var(--orange);
+    background-color: var(--gold);
     border: none;
 }
 /* sobre */
@@ -277,6 +275,11 @@ section.conheca-o-hotel ul.grid-img li.large{
     section.conheca-o-hotel ul.grid-img li.small,section.conheca-o-hotel ul.grid-img li.large{
         flex-basis: 100%;
     }
+}
+.card i{
+    font-size: 250%;
+    text-align: center;
+    color: var(--white);
 }
 /* clientes */
 section.conheca-o-hotel ul.grid-img-clientes{
@@ -334,13 +337,13 @@ section.section-vantagens p{
     font-size: 1.1rem;
     max-width: 800px;
     margin-bottom: 25px;
-    color: var(--orange2);
+    color: var(--gold);
 }
 section.section-vantagens hr{
     width: 200px;
     height: 2px;
     margin-bottom: 70px;
-    background-color: var(--orange2);
+    background-color: var(--gold);
     border: none;
 }
 section.section-vantagens div.service{
@@ -349,7 +352,7 @@ section.section-vantagens div.service{
     margin-bottom: 5rem;
 }
 section.section-vantagens div.service div.card{
-    background-color: var(--orange2);
+    background-color: var(--gold);
     color: var(--white);
     width: 100%;
     margin: 10px;
@@ -358,10 +361,10 @@ section.section-vantagens div.service div.card{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 div.service div.card p.title-service{
-    font-size: 1.1rem;
     color: var(--white);
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 15px;
 } 
 div.service div.card p.text-service{
     color: var(--white);
@@ -370,13 +373,14 @@ div.service div.card p.text-service{
 }
 div.service div.card a{
     padding: 10px;
-    background-color: var(--green);
+    background-color: var(--black);
     color: var(--white);
     text-transform: uppercase;
+    font-weight: 700;
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 0.9rem;
     transition: box-shadow 0.2s;
 }
 div.service div.card a:hover{
@@ -392,17 +396,19 @@ section.section-vantagens ul.grid-img li{
     list-style: none;
 }
 section.section-vantagens ul.grid-img li i{
-    color: var(--orange2);
+    color: var(--gold);
     font-size: 50px;
     margin-bottom: 30px;
 }
 section.section-vantagens ul.grid-img li h5{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--white);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    font-weight: 500;
 }
 section.section-vantagens ul.grid-img li p{
     color: var(--white);
+    font-size: 1rem;
 }
 @media (max-width: 950px){
     section.section-vantagens h4{
@@ -416,37 +422,39 @@ section.section-vantagens ul.grid-img li p{
        flex-direction: column;
     }
 }
-/* Newlatter */
-section.newsletter{
+/* Newslatter */
+section.newsletter {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
     padding: 100px 50px;
-    background-color: var(--orange2);
+    background-color: var(--white);
+    gap: 50px; /* Espaço entre as colunas */
 }
-section.newsletter h4{
+.newsletter-content {
+    max-width: 50%; /* Limita o conteúdo de texto a 50% da largura */
+    text-align: left;
+}
+section.newsletter h4 {
     font-size: 2.5rem;
     margin-bottom: 35px;
     color: var(--darkblue);
     line-height: 100%;
-    text-align: center;
 }
-section.newsletter p{
-    max-width: 800px;
-    margin-bottom: 25px;
-    color: var(--white);
-    font-size: 2rem;
-    text-wrap: wrap;
+section.newsletter p {
+    color: var(--darkblue);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
-section.newsletter hr{
+section.newsletter hr {
     width: 200px;
-    height: 2px;
-    margin-bottom: 50px;
-    background-color: var(--white);
+    height:4px;
+    margin-bottom: 40px;
+    background-color: var(--gold);
     border: none;
 }
-section.newsletter a{
+section.newsletter div.newsletter-content a {
+    /* margin-top: 50px; */
     padding: 15px;
     background-color: var(--green);
     color: var(--white);
@@ -455,7 +463,14 @@ section.newsletter a{
     border-radius: 20px 0px;
     cursor: pointer;
     font-size: 1.2rem;
-    animation: pulse 1s infinite; /* Aplica a animação pulse ao botão */
+    animation: pulse 1s infinite;
+}
+.about-image {
+    max-width: 45%; /* Define a largura máxima da imagem */
+}
+.about-image img {
+    width: 100%; /* A imagem ocupa 100% do espaço do container */
+    height: auto; /* Mantém a proporção da imagem */
 }
 @keyframes pulse {
     0% {
@@ -468,36 +483,194 @@ section.newsletter a{
         transform: scale(1);
     }
 }
-@media (max-width: 700px){
-    section.section-vantagens .grid-img{
+/* Responsividade para dispositivos menores */
+@media (max-width: 700px) {
+    section.newsletter {
         flex-direction: column;
+        padding: 50px 20px;
+    }
+    .newsletter-content, .about-image {
+        max-width: 100%;
+        text-align: center;
+    }
+    section.newsletter p {
+        font-size: 1.2rem; /* Reduz o tamanho da fonte para telas menores */
     }
 }
-/* footer */
-footer{
+/* faq */
+div.container-faq{
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    background: var(--black);
-    padding: 20px 20px;
     align-items: center;
+    background-color: #1D2937;
+    width: 100%;
+    height: 0 auto;
+    padding: 20px;
 }
-footer ul{
-    display: flex;
-    margin-bottom: 25px;
-    list-style: none;
-}
-footer ul li{
-    margin-right: 10px;
-}
-footer ul li:last-child{
-    margin-right: 0;
-}
-footer ul li a{
-    color: var(--white);
+div.container-faq h2{
     font-size: 2rem;
-    text-align: center;
-}
-footer p{
     color: var(--white);
+}
+div.container-faq details.details-faq{
+    padding: 10px;
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
+}
+div.container-faq details.details-faq summary{
+    font-size: 1.3rem;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+div.container-faq details.details-faq p{
+    font-size: 1.1rem;
+    color: var(--gold);
+}
+div.container-faq details.details-faq summary:hover {
+    cursor: pointer;
+    background-color: var(--gold);
+    color: var(--blue);
+    padding: 10px;
+    border-radius: 20px;
+}
+@media (max-width: 700px){
+    div.container-faq details.details-faq{
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+}
+}
+/* footer */
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    /* padding: 40px 20px; */
+    padding-top: 40px;
+    width: 100%;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+/* Coluna 1: Logo e Resumo */
+.footer-logo-summary {
     text-align: center;
+    flex: 1;
+    min-width: 200px;
+}
+.footer-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.footer-summary {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+/* Coluna 2: Links Institucionais */
+.footer-links {
+    flex: 1;
+    min-width: 200px;
+}
+.footer-links h3 {
+    font-size: 1.5rem;
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+.footer-links hr {
+    border: none;
+    height: 4px;
+    width: 12rem;
+    background-color: var(--gold);
+    margin-bottom: 10px;
+}
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-list li {
+    margin-bottom: 5px;
+}
+.footer-list li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1rem;
+}
+.footer-list li a:hover {
+    color: var(--gold);
+}
+/* Coluna 3: Contato e Redes Sociais */
+.footer-contact {
+    flex: 1;
+    min-width: 200px;
+}
+.footer-contact h3 {
+    font-size: 1.5rem;
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+.footer-contact hr {
+    border: none;
+    height: 4px;
+    width: 12rem;
+    background-color: var(--gold);
+    margin-bottom: 10px;
+}
+.social-icons {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin-top: 10px;
+}
+.social-icons li a {
+    font-size: 2rem;
+    color: var(--white);
+}
+.social-icons li a:hover {
+    color: var(--gold);
+}
+/* Sub-footer */
+.sub-footer {
+    background-color: var(--gold);
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.sub-footer p {
+    color: var(--black);
+    margin: 0;
+    font-size: 0.9rem;
+}
+.footer-dev {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.footer-dev:hover {
+    color: var(--white);
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-column {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .social-icons {
+        justify-content: center;
+    }
 }
