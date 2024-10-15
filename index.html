@@ -60,33 +60,20 @@
                 +55 11 95955-3569</a>
         </header>
         <nav id="itens">
-            <!-- Ícone do menu para dispositivos móveis -->
             <div class="menu-mobile-icon">
                 <i id="burguer" class="fas fa-bars" onclick="toggleMenu()"></i>
+                <!-- Ícone de fechar, inicialmente escondido -->
+                <i id="close-icon" class="fas fa-times" onclick="toggleMenu()" style="display: none;"></i>
             </div>
             <div class="logo-container">
-                <img src="img/grupo-js-prestacao-de-servico.png" alt="Logo da empresa" loading="lazy" height="100"
-                    width="100">
+                <img src="img/grupo-js-prestacao-de-servico.png" alt="Logo da empresa" loading="lazy" height="100" width="100">
             </div>
             <ul class="menu">
-                <li>
-                    <a href="index.html" class="navbar" style="color:#d1b564;" onclick="closeMenu()">Home</a>
-                </li>
-                <li>
-                    <a href="#sobre" class="navbar" onclick="closeMenu()">Sobre</a>
-                </li>
-                <li>
-                    <a href="#servicos" class="navbar" onclick="closeMenu()">Serviços</a>
-                </li>
-                <!-- <li>
-                    <a href="#clientes" class="navbar" onclick="closeMenu()">Clientes</a>
-                </li> -->
-                <li>
-                    <a href="#contato" class="navbar" onclick="closeMenu()">Contato</a>
-                </li>
-                <li>
-                    <a href="https://wa.me/5511959553569" class="btn-menu" target="_blank" rel="noopener noreferrer" title="Entre em contato via WhatsApp" aria-label="Entre em contato via WhatsApp no número +55 11 95955-3569">Solicitar orçamento</a>
-                </li>
+                <li><a href="index.html" class="navbar" style="color:#d1b564;" onclick="closeMenu()">Home</a></li>
+                <li><a href="#sobre" class="navbar" onclick="closeMenu()">Sobre</a></li>
+                <li><a href="#servicos" class="navbar" onclick="closeMenu()">Serviços</a></li>
+                <li><a href="#contato" class="navbar" onclick="closeMenu()">Contato</a></li>
+                <li><a href="https://wa.me/5511959553569" class="btn-menu" target="_blank" rel="noopener noreferrer">Solicitar orçamento</a></li>
                 <li>
                     <i class="fa-solid fa-sun"></i>
                     <input id="toggle-theme" type="range" min="0" max="1" step="1" value="0">
