@@ -2,10 +2,15 @@
     --black:#000;
     --white:#fff;
     --cinza:#ccc;
-    --darkblue:#1D2937;
+    --darkblue:#1D2937;    
+    --gold:#d1b564;
     --orange:#FF6E4B;
 }
 .tema-dark{
+    background-color: var(--darkblue);
+    color:#ccc !important;
+}
+.tema-dark body{
     background-color: var(--darkblue);
     color:#ccc !important;
 }
@@ -24,6 +29,42 @@
 .tema-dark section.banner a{
     color: var(--cinza);
 } 
+.tema-dark div.card-missao-visao-valores{
+    background-color: var(--gold);
+}
+.tema-dark div.card-missao-visao-valores i,
+.tema-dark div.card-missao-visao-valores h3,
+.tema-dark div.card-missao-visao-valores p{
+    color: var(--darkblue);
+}
+.tema-dark div.card-vantagens{
+    background-color: var(--gold);
+}
+.tema-dark div.card-vantagens i,
+.tema-dark div.card-vantagens h3,
+.tema-dark div.card-vantagens p{
+    color: var(--darkblue);
+}
+/* serviço */
+.tema-dark .service div.card{
+    background-color: var(--gold);
+}
+.tema-dark div.service div.card i{
+    color: var(--darkblue);
+}
+.tema-dark section.section-vantagens div.service{
+    background-color: var(--darkblue);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.tema-dark div.service div.card p{
+    color: var(--darkblue);
+}
+.tema-dark div.service div.card a{
+    color: var(--cinza);
+}
+.tema-dark section.section-vantagens ul.grid-img li p {
+    color: var(--cinza);
+}
 .tema-dark section.conheca-o-hotel h3{
     color: var(--cinza);
 }
@@ -32,14 +73,18 @@
 }
 .tema-dark section.section-vantagens h4{
     color: var(--cinza);
-} 
-.tema-dark div.service div.card p{
-    color: var(--cinza);
 }
 .tema-dark section.section-vantagens ul.grid-img li h5, p{
     color: var(--cinza);
 }
+.tema-dark section.newsletter{
+    background-color: var(--darkblue);
+    color:#ccc !important;
+}
 .tema-dark section.newsletter h4{
+    color: var(--cinza);
+}
+.tema-dark section.newsletter p{
     color: var(--cinza);
 }
 /* //trocar thems */
