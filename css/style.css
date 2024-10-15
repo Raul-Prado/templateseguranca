@@ -44,6 +44,14 @@ header i.icones{
     text-align: center;
     color: white;
 }
+@media (max-width:490px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 5rem;
+    }
+}
 /* navbar */
 nav {
     display: flex;
@@ -87,6 +95,25 @@ nav a.navbar:hover{
     text-decoration: none;
     color: var(--darkblue);
     font-size: 1rem;
+}
+.menu li a.btn-menu {
+    padding: 10px;
+    background-color: var(--black);
+    color: var(--gold);
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1rem;
+    white-space: normal;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu li a.btn-menu:hover {
+    transform: translateY(-5px); /* Levanta o botão ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Aumenta a sombra para parecer que está no ar */
+    background-color: var(--gold); /* Altera a cor de fundo */
+    color: var(--white); /* Altera a cor do texto */
 }
 /* Menu mobile */
 @media (max-width: 740px) {
@@ -132,7 +159,7 @@ nav a.navbar:hover{
     display: flex;
     justify-content: space-around; /* Distribui os cards igualmente ao longo da linha */
     flex-wrap: wrap; /* Permite que os cards se movam para a próxima linha quando não há espaço suficiente */
-    margin-top: 10vh;
+    margin-top: 2vh;
 }
 .card-vantagens {
     width: 300px;
@@ -175,13 +202,66 @@ nav a.navbar:hover{
     text-align: center;
     color: var(--gold);
 }
+/* missão, visão e valores */
+.card-container-missao-visao-valores {
+    display: flex;
+    justify-content: space-around; /* Distribui os cards igualmente ao longo da linha */
+    flex-wrap: wrap;
+}
+.card-missao-visao-valores {
+    display: flex;
+    justify-content: space-around; /* Distribui os cards igualmente ao longo da linha */
+    flex-wrap: wrap; /* Permite que os cards se movam para a próxima linha quando não há espaço suficiente */
+    margin-top: 10vh;
+}
+.card-missao-visao-valores {
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+    padding: 20px;
+    background-color:var(--white);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 0.5px solid #d1b564;
+}
+.card-missao-visao-valores:hover{
+    /* transform: translateY(-10px); */
+    background-color:var(--gold);
+    color: var(--white);
+}
+.card-missao-visao-valores:hover h3,
+.card-missao-visao-valores:hover p,
+.card-missao-visao-valores:hover i {
+    color: var(--white);
+}
+.card-missao-visao-valores i {
+    font-size: 300%;
+    text-align: center;
+    color: var(--gold);
+}
+.card-missao-visao-valores h3 {
+    margin: 0;
+    font-size: 110%;
+    text-align: center;
+    color: var(--gold);
+}
+.card-missao-visao-valores p {
+    margin: 0;
+    font-size: 90%;
+    text-align: center;
+    color: var(--gold);
+}
 /* banner */
 .banner{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(../img/banner-grupo-js-prestadora-de-servico.svg);
+    background-image: url(../img/banner-grupo-js-prestadora-de-servico-\ seguranca.svg);
     background-size: cover;
     background-position: center;
     min-height: 85vh;
@@ -216,7 +296,7 @@ nav a.navbar:hover{
 }
 @media (max-width: 700px){
     .banner h1{font-size: 2rem; padding: 10px;}
-    .banner h2{font-size: 1.5rem;}
+    .banner h2{font-size: 1.5rem; padding: 10px;}
     .banner .btn-saiba-mais{font-size: 1rem; padding: 10px 15px;}
 }
 /* conheça o hotel */
@@ -224,7 +304,8 @@ section.conheca-o-hotel{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 20px;
+    margin-top: 50px;
+    /* padding: 50px 20px; */
     text-align: center;
 }
 section.conheca-o-hotel h3{
@@ -237,12 +318,12 @@ section.conheca-o-hotel p{
     font-size: 1.1rem;
     max-width: 800px;
     margin-bottom: 25px;
-    color: var(--gold);
+    color: var(--darkblue);
 }
 section.conheca-o-hotel hr{
     width: 200px;
     height: 2px;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
     background-color: var(--gold);
     border: none;
 }
@@ -373,7 +454,7 @@ div.service div.card p.text-service{
 }
 div.service div.card a{
     padding: 10px;
-    background-color: var(--black);
+    background-color: var(--darkblue);
     color: var(--white);
     text-transform: uppercase;
     font-weight: 700;
@@ -443,7 +524,7 @@ section.newsletter h4 {
 }
 section.newsletter p {
     color: var(--darkblue);
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin-bottom: 20px;
 }
 section.newsletter hr {
