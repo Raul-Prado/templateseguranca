@@ -319,6 +319,7 @@ section.conheca-o-hotel p{
     max-width: 800px;
     margin-bottom: 25px;
     color: var(--darkblue);
+    padding: 10px;
 }
 section.conheca-o-hotel hr{
     width: 200px;
