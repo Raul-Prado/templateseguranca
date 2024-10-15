@@ -3,8 +3,13 @@ function toggleMenu() {
     if (menu) {
         console.log('Toggle menu');
         menu.classList.toggle("menu-open");
-    } else {
-        console.error('Menu element not found');
+
+        // Adiciona um evento de clique para fechar o menu quando o usuário clicar fora
+        if (menu.classList.contains("menu-open")) {
+            document.addEventListener('click', closeMenuOnClickOutside);
+        } else {
+            document.removeEventListener('click', closeMenuOnClickOutside);
+        }
     }
 }
 
@@ -13,8 +18,16 @@ function closeMenu() {
     if (menu) {
         console.log('Close menu');
         menu.classList.remove("menu-open");
-    } else {
-        console.error('Menu element not found');
+        document.removeEventListener('click', closeMenuOnClickOutside);
+    }
+}
+
+// Função que verifica se o clique foi fora do menu
+function closeMenuOnClickOutside(event) {
+    var menu = document.querySelector(".menu");
+    var burgerIcon = document.getElementById("burguer");
+    if (menu && !menu.contains(event.target) && !burgerIcon.contains(event.target)) {
+        closeMenu();
     }
 }
 
@@ -25,7 +38,5 @@ document.addEventListener('DOMContentLoaded', function () {
         menuItems.forEach(item => {
             item.addEventListener('click', closeMenu);
         });
-    } else {
-        console.error('Menu items not found');
     }
 });
