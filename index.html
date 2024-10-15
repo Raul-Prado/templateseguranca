@@ -8,7 +8,7 @@
     <meta name="description" content="Grupo JS é uma empresa especializada em prestação de serviços com foco na qualidade e atendimento ao cliente. Oferecemos soluções de segurança, jardinagem e serviços gerais.">
     <meta name="keywords" content="serviços, segurança, jardinagem, atendimento ao cliente, serviços gerais, portaria, Grupo JS Prestadora de Serviço">
     <meta name="robots" content="index, follow">
-    <meta name="copyright" content="Com Amor Oficial">
+    <meta name="copyright" content="Grupo JS">
     <meta name="revisit-after" content="30 days">
     <!-- Open Graph para redes sociais -->
     <meta property="og:title" content="Grupo JS Prestadora de Serviço">
@@ -52,10 +52,11 @@
         <header>
             <address>
                 <i class="fa-solid fa-envelope icones"></i>
-                <a href="mailto:jsportariaeoutros@yahoo.com"
-                    title="Envie uma menssagem ao nosso E-mail">jsportariaeoutros@yahoo.com</a>
+                <a href="mailto:jsportariaeoutros@yahoo.com" title="Envie uma menssagem ao nosso E-mail" rel="noopener noreferrer" aria-label="Entre em contato via E-mail"
+                    >jsportariaeoutros@yahoo.com</a>
             </address>
-            <a href="tel:+5511959553569" title="Ligue para nossa equipe"><i class="fa-solid fa-phone-volume icones"></i>
+            <a href="tel:+5511959553569" target="_blank" rel="noopener noreferrer" title="Entre em contato via telefone" aria-label="Entre em contato via telefone no número +55 11 95955-3569"
+            ><i class="fa-solid fa-phone-volume icones"></i>
                 +55 11 95955-3569</a>
         </header>
         <nav id="itens">
@@ -77,11 +78,14 @@
                 <li>
                     <a href="#servicos" class="navbar" onclick="closeMenu()">Serviços</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="#clientes" class="navbar" onclick="closeMenu()">Clientes</a>
-                </li>
+                </li> -->
                 <li>
                     <a href="#contato" class="navbar" onclick="closeMenu()">Contato</a>
+                </li>
+                <li>
+                    <a href="https://wa.me/5511959553569" class="btn-menu" target="_blank" rel="noopener noreferrer" title="Entre em contato via WhatsApp" aria-label="Entre em contato via WhatsApp no número +55 11 95955-3569">Solicitar orçamento</a>
                 </li>
                 <li>
                     <i class="fa-solid fa-sun"></i>
@@ -94,9 +98,61 @@
         <section class="banner">
             <h1>Guardando o que é <strong style="color: #d1b564;">importante</strong> para você</h1>
             <h2>Com a <strong style="color: #d1b564;">JS Prestadora de Serviços</strong>, você tem a garantia de excelência e qualidade nos nossos serviços.</h2>
-            <a href="http://" class="btn-saiba-mais">Fale conosco</a>
+            <a href="https://wa.me/5511959553569" target="_blank" rel="noopener noreferrer" title="Entre em contato via WhatsApp" aria-label="Entre em contato via WhatsApp no número +55 11 95955-3569" class="btn-saiba-mais" >Fale conosco</a>
         </section>
         <main>
+            <!-- sobre -->
+            <section class="conheca-o-hotel" id="sobre">
+                <h3>Especialista em <strong style="color: #d1b564;">Segurança e Serviços.</strong></h3>
+                <p>O Grupo JS Prestadora de Serviço oferece soluções completas, híbridas e eficientes para atender cada demanda dos clientes
+                    em Segurança e Serviços.
+                    A seleção, treinamento e desenvolvimento dos profissionais aliados a uma gestão moderna, controle de
+                    todos os processos e tecnologia disruptiva garantem a eficiência dos serviços prestados.
+                    A longa trajetória da empresa, que já soma mais de 30 anos de atuação, confere às equipes o
+                    histórico e o conhecimento acumulado necessários para que as melhores estratégias sejam aplicadas em
+                    todo tipo de contrato, atendendo organizações de diversos portes e ramos de atividade.
+                </p>
+                <hr>
+                <!-- <ul class="grid-img">
+                    <li class="small"
+                        style="background-image: url('img/agente-de-seguranca-de-tiro-medio-posando-no-estudio.jpg');">
+                    </li>
+                    <li class="large" style="background-image: url('img/empresa-de-limpeza-terceirizada-2.webp');"></li>
+                    <li class="large" style="background-image: url('img/empresa-manutencao-cameras-seguranca-02.jpg');">
+                    </li>
+                    <li class="small"
+                        style="background-image: url('img/110688-o-que-faz-uma-empresa-de-seguranca.webp');"></li>
+                </ul> -->
+            </section>
+            <!-- missão visão valores -->
+            <section class="card-container-missao-visao-valores">
+                <div class="card-missao-visao-valores">
+                    <i class="fa-solid fa-handshake"></i>
+                    <h3>Missão</h3>
+                    <p>Garantir a segurança e proteção com excelência, por meio de serviços profissionais de alta qualidade, proporcionando confiança e tranquilidade aos nossos clientes.</p>
+                </div>
+                <div class="card-missao-visao-valores">
+                    <i class="fa-solid fa-eye"></i>
+                    <h3>Visão</h3>
+                    <p>Ser reconhecida como a empresa referência em soluções de segurança, destacando-se pela inovação, eficiência e compromisso com o bem-estar de nossos clientes.</p>
+                </div>
+                <div class="card-missao-visao-valores">
+                    <i class="fa-solid fa-medal"></i>
+                    <h3>Valores</h3>
+                    <p>Comprometimento com a integridade, qualidade e respeito ao cliente, priorizando a confiabilidade, transparência e profissionalismo em todas as nossas ações.</p>
+                </div>
+            </section>
+            <!-- porque nós -->
+            <section class="newsletter" id="contato">
+                <div class="newsletter-content">
+                    <h4>Por que escolher o <strong style="color: #d1b564;">GRUPO JS?</strong></h4>
+                    <p>Oferecemos uma ampla gama de serviços, projetados para atender às mais variadas necessidades de nossos clientes. Nosso compromisso é garantir tranquilidade e confiança, proporcionando a proteção e a manutenção eficaz de seus bens e instalações.</p>
+                    <hr>
+                </div>
+                <div class="about-image">
+                    <img src="img/Por-que-escolher-o-GRUPO-JS.svg" alt="Consulta CNPJ">
+                </div>
+            </section>
             <!-- vantagens -->
             <section class="card-container">
                 <div class="card-vantagens">
@@ -124,29 +180,6 @@
                         tratados de forma única e especial.</p>
                 </div>
             </section>
-            <!-- sobre -->
-            <section class="conheca-o-hotel" id="sobre">
-                <h3>Especialista em <strong style="color: #d1b564;">Segurança e Serviços.</strong></h3>
-                <p>O Grupo JS Prestadora de Serviço oferece soluções completas, híbridas e eficientes para atender cada demanda dos clientes
-                    em Segurança e Serviços.
-                    A seleção, treinamento e desenvolvimento dos profissionais aliados a uma gestão moderna, controle de
-                    todos os processos e tecnologia disruptiva garantem a eficiência dos serviços prestados.
-                    A longa trajetória da empresa, que já soma mais de 30 anos de atuação, confere às equipes o
-                    histórico e o conhecimento acumulado necessários para que as melhores estratégias sejam aplicadas em
-                    todo tipo de contrato, atendendo organizações de diversos portes e ramos de atividade.
-                </p>
-                <hr>
-                <!-- <ul class="grid-img">
-                    <li class="small"
-                        style="background-image: url('img/agente-de-seguranca-de-tiro-medio-posando-no-estudio.jpg');">
-                    </li>
-                    <li class="large" style="background-image: url('img/empresa-de-limpeza-terceirizada-2.webp');"></li>
-                    <li class="large" style="background-image: url('img/empresa-manutencao-cameras-seguranca-02.jpg');">
-                    </li>
-                    <li class="small"
-                        style="background-image: url('img/110688-o-que-faz-uma-empresa-de-seguranca.webp');"></li>
-                </ul> -->
-            </section>
             <!-- Serviços -->
             <section class="section-vantagens" id="servicos">
                 <h4>Nossos <strong style="color: #d1b564;">principais</strong> serviços</h4>
@@ -159,7 +192,7 @@
                         <p class="text-service">Nosso serviço de vigilância oferece proteção 24 horas por dia, 7 dias
                             por semana, garantindo a segurança e tranquilidade do seu patrimônio.
                         </p>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">Solicitar orçamento</a>
+                        <a href="https://wa.me/5511959553569" target="_blank" rel="noopener noreferrer" title="Entre em contato via WhatsApp" aria-label="Entre em contato via WhatsApp no número +55 11 95955-3569">Solicitar orçamento</a>
                     </div>
                     <div class="card">
                         <i class="fa-solid fa-users-viewfinder"></i>
@@ -167,7 +200,7 @@
                         <p class="text-service">Profissionais treinados em atendimento ao cliente e segurança,
                             garantindo a entrada e saída, mantendo a segurança e o controle de acesso.
                         </p>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">Solicitar orçamento</a>
+                        <a href="https://wa.me/5511959553569" target="_blank" rel="noopener noreferrer" title="Entre em contato via WhatsApp" aria-label="Entre em contato via WhatsApp no número +55 11 95955-3569">Solicitar orçamento</a>
                     </div>
                     <div class="card">
                         <i class="fa-solid fa-screwdriver-wrench"></i>
@@ -176,14 +209,14 @@
                             atualizações para garantir que todos os equipamentos, estejam funcionando de forma
                             eficiente.
                         </p>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">Solicitar orçamento</a>
+                        <a href="https://wa.me/5511959553569" target="_blank" rel="noopener noreferrer" title="Entre em contato via WhatsApp" aria-label="Entre em contato via WhatsApp no número +55 11 95955-3569">Solicitar orçamento</a>
                     </div>
                     <div class="card">
                         <i class="fa-solid fa-broom"></i>
                         <p class="title-service">Limpeza</p>
                         <p class="text-service">Equipe experiente realiza limpezas regulares e detalhadas, garantindo
                             que todos os espaços estejam impecáveis e livres de sujeira, poeira e germes.</p>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">Solicitar orçamento</a>
+                        <a href="https://wa.me/5511959553569" target="_blank" rel="noopener noreferrer" title="Entre em contato via WhatsApp" aria-label="Entre em contato via WhatsApp no número +55 11 95955-3569">Solicitar orçamento</a>
                         <br>
                     </div>
                 </div>
@@ -208,7 +241,7 @@
                 </ul>
             </section>
             <!-- Portfólio -->
-            <section class="conheca-o-hotel" id="clientes">
+            <!-- <section class="conheca-o-hotel" id="clientes">
                 <h3>Nossos Clientes</h3>
                 <p>Projetos Recentes</p>
                 <hr>
@@ -219,7 +252,7 @@
                     </li>
                     <li class="small" style="background-image: url('img/Mercado-Livre-cliente.jpg');"></li>
                 </ul>
-            </section>
+            </section> -->
             <!-- newslatter -->
             <section class="newsletter" id="contato">
                 <div class="about-image">
@@ -232,7 +265,7 @@
                     <p><strong style="color: #d1b564;">Foque no que é mais estratégico</strong> para a sua empresa e deixe a operação com quem é especialista.<br>
                         Solicite um contato para conhecer nossas soluções e ver como podemos te ajudar!
                     </p>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">Iniciar Cotação <i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://wa.me/5511959553569" target="_blank" rel="noopener noreferrer" title="Entre em contato via WhatsApp" aria-label="Entre em contato via WhatsApp no número +55 11 95955-3569">Iniciar Cotação <i class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </section>
             <!-- FAQ -->
@@ -264,7 +297,7 @@
                         <summary itemprop="name">Como faço para solicitar um orçamento?</summary>
                         <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
                             <p itemprop="text">
-                                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Clique aqui</a> ou entre em contato diretamente
+                                <a href="https://wa.me/5511959553569" target="_blank" rel="noopener noreferrer" title="Entre em contato via WhatsApp" aria-label="Entre em contato via WhatsApp no número +55 11 95955-3569"><i class="fa-brands fa-whatsapp"></i> Clique aqui</a> ou entre em contato diretamente
                                 conosco através do nosso canal de atendimento.
                             </p>
                         </div>
@@ -289,7 +322,7 @@
                         <li><a href="index.html" class="navbar-footer">Home</a></li>
                         <li><a href="#sobre" class="navbar-footer">Sobre</a></li>
                         <li><a href="#servicos" class="navbar-footer">Serviços</a></li>
-                        <li><a href="#clientes" class="navbar-footer">Clientes</a></li>
+                        <!-- <li><a href="#clientes" class="navbar-footer">Clientes</a></li> -->
                         <li><a href="#contato" class="navbar-footer">Contato</a></li>
                     </ul>
                 </div>
@@ -309,11 +342,11 @@
                                 title="Facebook do Grupo JS Prestadora de Serviço"
                                 aria-label="Facebook do Grupo JS Prestadora de Serviço"><i
                                     class="fa-brands fa-square-facebook"></i></a></li>
-                        <li><a itemprop="sameAs" itemscope itemtype="https://schema.org/Place" href="http://" target="_blank" rel="noopener noreferrer"
+                        <li><a itemprop="sameAs" itemscope itemtype="https://schema.org/Place" href="https://www.instagram.com/_grupojs" target="_blank" rel="noopener noreferrer"
                                 title="Instagram do Grupo JS Prestadora de Serviço"
                                 aria-label="Instagram do Grupo JS Prestadora de Serviço"><i
                                     class="fa-brands fa-square-instagram"></i></a></li>
-                        <li><a itemprop="sameAs" itemscope itemtype="https://schema.org/Place" href="http://" target="_blank" rel="noopener noreferrer"
+                        <li><a itemprop="sameAs" itemscope itemtype="https://schema.org/Place" href="https://wa.me/5511959553569" target="_blank" rel="noopener noreferrer" 
                                 title="WhatsApp do Grupo JS Prestadora de Serviço"
                                 aria-label="WhatsApp do Grupo JS Prestadora de Serviço"><i
                                     class="fa-brands fa-square-whatsapp"></i></a></li>
@@ -323,7 +356,8 @@
             <!-- Sub-footer -->
             <div class="sub-footer">
                 <p>Grupo JS Prestadora de Serviço © Copyright 2024 Todos os direitos reservados.</p>
-                <a href="" class="footer-dev" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5511976696658" target="_blank" rel="noopener noreferrer" class="footer-dev"
+                title="Entre em contato via WhatsApp" aria-label="Entre em contato via WhatsApp no número +55 11 97669-6658">
                     Desenvolvido por GrupoInovaTech 2024 <span style="font-size: 100%;">&#9749</span> Feito com Amor
                     <span style="font-size: 100%;">&#128155</span>
                 </a>
